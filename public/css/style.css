@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+img {
+  width: 100%;
+  display: block; }
+
+.card-group {
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .card-group img {
+    transition: 3s;
+    padding: 30px; }
+    .card-group img:hover {
+      transform: scale(1.2); }
+  .card-group .card-body .card-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .card-group .card-body .card-price {
+    color: red; }
+
+.footer {
+  margin-top: 20px;
+  background-color: #fff; }
+  .footer h2 {
+    font-size: 1.5rem; }

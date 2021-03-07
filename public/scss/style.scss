@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.card-group{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  .card{
+      
+  }
+  img{
+      transition:  3s;
+      padding: 30px;
+      &:hover{
+          transform : scale(1.2);
+      }
+  }
+  .card-body{
+      .card-title{
+          text-overflow: ellipsis;
+          white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis // This is where the magic happens
+      }
+      .card-price{
+          color: red;
+      }
+  }
+}
+
+
+
+//start footer
+.footer{
+    margin-top: 20px;
+    background-color: #fff;
+    h2{
+        font-size: 1.5rem;
+    }
+}

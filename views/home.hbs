@@ -1,0 +1,33 @@
+<head>
+    <title>Trang chủ</title>
+</head>
+<div id="carouselExampleSlidesOnly" class="carousel slide  mt-2" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/690x300_Final.png" class="d-block w-100" alt="..." class="img-fluid">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/11-690X300_2_.png" class="d-block w-100" alt="..." class="img-fluid">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/Sliding-690x300-Realme-Buds-Air-Pro.png" class="d-block w-100" alt="..."
+                class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="card-group gx-5 mt-3">
+    <div class="row ">
+        {{#each products}}
+        <div class="card col-xl-3 col-lg-3 col-md-6 col-sm-12 ">
+            <a href="/products/{{this.slug}}"><img src="{{this.image}}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p>{{this.brand}}</p>
+                <p class="card-price">{{this.price}}</p>
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
